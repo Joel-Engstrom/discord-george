@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "NodeNext",
+        "outDir": "./build",
+        "rootDir": "./src",
+        "moduleResolution": "NodeNext",
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": false,
+        "skipLibCheck": false,
+        "forceConsistentCasingInFileNames": true,
+        "verbatimModuleSyntax": true,
+        "strict": true,
+        "esModuleInterop": true
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["build", "node_modules"]
+}
