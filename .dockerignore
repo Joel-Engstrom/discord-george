@@ -1,5 +1,10 @@
 node_modules
 npm-debug.log
+build
 .git
 .gitignore
 .env 
+nodemon.json
+README.md
+tsconfig.json
+yarn.lock

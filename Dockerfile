@@ -1,5 +1,5 @@
 # Använd en officiell Node runtime som parent image
-FROM node:18-alpine
+FROM oven/bun:latest
 
 # Sätt arbetskatalogen i containern
 WORKDIR /app
@@ -8,13 +8,10 @@ WORKDIR /app
 COPY package*.json ./
 
 # Installera projektets dependencies
-RUN npm install
+RUN bun install
 
 # Kopiera resten av applikationens källkod
 COPY . .
 
-# Exponera port 3000
-EXPOSE 3000
-
 # Starta applikationen
-CMD ["npm", "start"] 
+CMD ["bun", "src/main.ts"] 
